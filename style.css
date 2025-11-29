@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffb3c6, #ffdde1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4f7b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ff6c94;
+}
+
+/* Hide checkbox */
+#reveal {
+    display: none;
+}
+
+/* Hidden message box */
+.message {
+    background: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: #ff4f7b;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Reveal animation */
+#reveal:checked + .message {
+    opacity: 1;
+    transform: scale(1);
+}
+
